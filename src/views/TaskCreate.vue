@@ -54,7 +54,10 @@ const submitContract = () => {
 
         <div v-if="error" class="error-msg">{{ error }}</div>
 
-        <button type="submit" class="submit-btn">Lock Stake & Commit</button>
+        <div style="display: flex; gap: 1rem; margin-top: 0.5rem;">
+          <button type="button" class="nav-btn" style="flex: 1; padding: 1rem;" @click="router.push('/')">Cancel</button>
+          <button type="submit" class="submit-btn" style="flex: 2;">Lock Stake & Commit</button>
+        </div>
       </form>
     </div>
   </div>
